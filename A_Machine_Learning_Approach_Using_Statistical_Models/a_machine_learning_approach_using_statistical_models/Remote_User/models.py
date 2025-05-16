@@ -1,6 +1,4 @@
 from django.db import models
-
-# Create your models here.
 from django.db.models import CASCADE
 
 
@@ -15,32 +13,27 @@ class ClientRegister_Model(models.Model):
 
 
 class cardiac_arrest_prediction(models.Model):
-
-    Fid= models.CharField(max_length=3000)
-    Age_In_Days= models.CharField(max_length=3000)
-    Sex= models.CharField(max_length=3000)
-    ChestPainType= models.CharField(max_length=3000)
-    RestingBP= models.CharField(max_length=3000)
-    RestingECG= models.CharField(max_length=3000)
-    MaxHR= models.CharField(max_length=3000)
-    ExerciseAngina= models.CharField(max_length=3000)
-    Oldpeak= models.CharField(max_length=3000)
-    ST_Slope= models.CharField(max_length=3000)
-    slp= models.CharField(max_length=3000)
-    caa= models.CharField(max_length=3000)
-    thall= models.CharField(max_length=3000)
-    Prediction= models.CharField(max_length=3000)
+    Fid = models.TextField()  # Changed from CharField(3000) to TextField
+    Age_In_Days = models.TextField()
+    Sex = models.TextField()
+    ChestPainType = models.TextField()
+    RestingBP = models.TextField()
+    RestingECG = models.TextField()
+    MaxHR = models.TextField()
+    ExerciseAngina = models.TextField()
+    Oldpeak = models.TextField()
+    ST_Slope = models.TextField()
+    slp = models.TextField()
+    caa = models.TextField()
+    thall = models.TextField()
+    Prediction = models.TextField()
 
 
 class detection_accuracy(models.Model):
-
     names = models.CharField(max_length=300)
     ratio = models.CharField(max_length=300)
+
 
 class detection_ratio(models.Model):
-
     names = models.CharField(max_length=300)
     ratio = models.CharField(max_length=300)
-
-
-

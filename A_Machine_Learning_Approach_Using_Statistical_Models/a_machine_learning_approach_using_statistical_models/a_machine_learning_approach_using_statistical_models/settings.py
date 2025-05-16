@@ -4,7 +4,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -70,11 +70,14 @@ WSGI_APPLICATION = 'a_machine_learning_approach_using_statistical_models.wsgi.ap
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'a_machine_learning_approach_using_statistical_models',
+        'NAME': 'cardiac_db',
         'USER':'root',
-        'PASSWORD': '',
-        'HOST' :'127.0.0.1',
+        'PASSWORD': 'sqlpassword',
+        'HOST' :'localhost',
         'PORT' :'3306',
+        'OPTIONS': {
+            'unix_socket': '/tmp/mysql.sock',  # <-- update this
+        },
     }
 }
 
