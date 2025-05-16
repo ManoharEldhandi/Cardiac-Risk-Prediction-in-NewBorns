@@ -1,10 +1,10 @@
-# 🧬 A Machine Learning Approach Using Statistical Models for Early Detection
+A Machine Learning Approach Using Statistical Models for Early Detection
 
 This project implements a web-based machine learning system that enables **early detection of cardiac arrest risk in newborns** based on vital signs and medical indicators. Built using **Django for the backend** and **MySQL for data persistence**, the solution integrates a robust **ML prediction engine** powered by **scikit-learn** to assist healthcare professionals in proactive risk assessment.
 
 ---
 
-## 📦 System Requirements
+System Requirements
 
 - **Python 3.10+**
 - **Django 4.0+**
@@ -15,7 +15,7 @@ This project implements a web-based machine learning system that enables **early
 
 ---
 
-## 🔧 Installation - Required Packages
+Installation - Required Packages
 
 Install all required packages with the following command:
 ```bash
@@ -30,23 +30,23 @@ pip3 install sklearn --break-system-packages
 
 ---
 
-## 🚀 Getting Started - How to Run the Project
+Getting Started - How to Run the Project
 
-### 1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/YourUsername/Cardiac_Early_Detection.git
 cd Cardiac_Early_Detection
 ```
 
-### 2️⃣ Start Backend Services
+2️⃣ Start Backend Services
 
 ```bash
 brew services start mysql
 brew services start httpd
 ```
 
-### 3️⃣ Create MySQL Database
+3️⃣ Create MySQL Database
 
 ```bash
 mysql -u root -p
@@ -55,24 +55,24 @@ mysql -u root -p
 
 Once inside MySQL:
 ```sql
-CREATE DATABASE cardiac_detection;
-USE cardiac_detection;
+CREATE DATABASE cardiac_db;
+USE cardiac_db;
 ```
 
-### 4️⃣ Apply Migrations
+4️⃣ Apply Migrations
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5️⃣ Run the Server
+5️⃣ Run the Server
 
 ```bash
 python manage.py runserver
 ```
 
-### 6️⃣ Open in Your Browser
+Open in Your Browser
 
 ```
 Visit http://127.0.0.1:8000/ to interact with the application.
@@ -80,7 +80,7 @@ Visit http://127.0.0.1:8000/ to interact with the application.
 
 ---
 
-## 🧪 Usage Workflow
+Usage Workflow
 
 ```text
 1. Register/Login as a remote user.
@@ -98,7 +98,7 @@ Visit http://127.0.0.1:8000/ to interact with the application.
 
 ---
 
-## 🌟 Core Features
+Core Features
 
 ```yaml
 ✅ User Authentication System
@@ -117,7 +117,7 @@ Visit http://127.0.0.1:8000/ to interact with the application.
 
 ---
 
-## 🧠 Machine Learning Details
+Machine Learning Details
 
 | Model               | Role                    | Description |
 |--------------------|-------------------------|-------------|
@@ -131,7 +131,7 @@ Each model is trained on a clean, structured dataset and evaluated with precisio
 
 ---
 
-## 🛠️ Architecture Overview
+Architecture Overview
 
 ```
 [Frontend (Templates)]
@@ -145,7 +145,7 @@ Each model is trained on a clean, structured dataset and evaluated with precisio
 
 ---
 
-## 📂 Folder Structure
+Folder Structure
 
 ```
 Cardiac_Early_Detection/
@@ -163,7 +163,7 @@ Cardiac_Early_Detection/
 
 ---
 
-## 📊 Sample Predictions
+Sample Predictions
 
 | Input Features | Prediction |
 |----------------|------------|
@@ -173,16 +173,15 @@ Cardiac_Early_Detection/
 
 ---
 
-## 🧑‍💻 Author
+Author
 
-**Manohar Eldhandi**  
-🎓 CMR Institute of Technology  
-📧 manohareldhandi@gmail.com  
+Manohar Eldhandi 
+📧 manohar.eldhandi@outlook.com 
 🌐 [LinkedIn](https://www.linkedin.com/in/manohar-eldhandi-baa016264/)  
 💻 [GitHub](https://github.com/ManoharEldhandi)
 
 ---
 
-## 🛡️ License
+License
 
 This project is open-sourced under the **MIT License**.
