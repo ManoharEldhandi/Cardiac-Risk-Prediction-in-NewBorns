@@ -175,8 +175,8 @@ Sample Predictions
 
 Author
 
-Manohar Eldhandi 
-📧 manohar.eldhandi@outlook.com 
+**Manohar Eldhandi**
+📧 manohar.eldhandi@outlook.com
 🌐 [LinkedIn](https://www.linkedin.com/in/manohar-eldhandi-baa016264/)  
 💻 [GitHub](https://github.com/ManoharEldhandi)
 
